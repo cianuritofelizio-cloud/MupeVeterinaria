@@ -1,0 +1,102 @@
+:root {
+  --principal1:#E50F53;
+  --principal2:#FFFFFF;
+  --principal3:#030303;
+  --secundario1:#F8E4DA;
+  --secundario2:#D1F4FF;
+  --secundario3:#E9A0A0;
+}
+
+body {
+  margin: 0;
+  background-color: var(--secundario1); /* fondo rosa claro */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Encabezado con fondo rosa fuerte y logo centrado */
+.encabezado {
+  background-color: var(--secundario3);
+  text-align: center;
+  padding: 1.5rem 0;
+  border-bottom: 3px solid var(--principal1);
+}
+.encabezado img {
+  max-height: 60px;
+}
+
+/* Caja de login */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+.login-box {
+  background: var(--principal2);
+  border: 2px solid var(--principal1);
+  border-radius: 15px;
+  padding: 2rem;
+  width: 350px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+h2 {
+  color: var(--secundario3);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  border: 1px solid var(--principal1);
+  border-radius: 8px;
+}
+input:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--secundario3);
+  border-color: var(--secundario3);
+}
+button {
+  background-color: var(--secundario3);
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+button:hover {
+  background-color: var(--principal1);
+  color: var(--principal3);
+}
+.link {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--secundario3);
+  color: var(--principal3);
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 3px solid var(--principal1);
+}
+.redes a {
+  color: var(--principal3);
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: bold;
+}
+.redes a:hover {
+  color: var(--principal1);
+}

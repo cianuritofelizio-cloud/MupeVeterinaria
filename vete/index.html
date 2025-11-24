@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MUPE Veterinaria</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/bbf0071ecd.js" crossorigin="anonymous"></script>
+  <style>
+    /* Ajustes rápidos para la sección de productos cuando no son links */
+    .contenedor_productos { display:flex; flex-wrap:wrap; gap:18px; justify-content:center; padding:18px 0; }
+    .producto-item { width:220px; background:#fff; border-radius:12px; box-shadow:0 8px 22px rgba(0,0,0,0.06); padding:12px; text-align:center; }
+    .producto-item img { width:100%; height:160px; object-fit:cover; border-radius:8px; display:block; margin:0 auto 10px; }
+    .producto-item .nombre { font-weight:700; color:#222; margin:6px 0 4px; }
+    .producto-item .descripcion_corta { font-size:0.92rem; color:#666; margin:0 0 8px; min-height:36px; }
+    .producto-item .precio { font-weight:800; color:#E50F53; margin-top:6px; }
+  </style>
+</head>
+<body>
+  <!-- Encabezado blanco con logo -->
+  <header class="encabezado">
+    <div class="contenedor_encabezado">
+      <img src="imagenes/logo.png" class="logo" alt="Logo MUPE">
+      <h1 class="titulo">MUPE Veterinaria</h1>
+    </div>
+    <nav class="nav">
+      <a href="#"><i class="fa-solid fa-house"></i> Inicio</a>
+      <a href="#"><i class="fa-solid fa-stethoscope"></i> Servicios</a>
+      <a href="#"><i class="fa-solid fa-users"></i> Nosotros</a>
+      <a href="#"><i class="fa-solid fa-phone"></i> Contacto</a>
+      <a href="login.html"><i class="fa-solid fa-circle-user"></i> Iniciar Sesión</a>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <div class="banner">
+    <img src="imagenes/banner.png" alt="Banner Promocional">
+  </div>
+
+  <!-- Galería -->
+  <main class="galeria">
+    <h2 class="titulo_galeria">RECOMENDADOS</h2>
+    <p class="descripcion_galeria">El mejor cuidado para tus mascotas</p>
+    <div class="contenedor_productos">
+      <!-- Bloques sin enlaces: texto conforme a la imagen -->
+      <div class="producto-item" aria-hidden="false">
+        <img src="imagenes/produc_1.png" alt="TAPETE">
+        <div class="nombre">Tapete Antideslizante</div>
+        <div class="descripcion_corta">Tapete cómodo y antideslizante para el descanso y entrenamiento de tu mascota.</div>
+        <div class="precio">$300.00</div>
+      </div>
+
+      <div class="producto-item">
+        <img src="imagenes/produc_2.png" alt="TRASTE DE COMIDA">
+        <div class="nombre">Traste de Comida Antideslizante</div>
+        <div class="descripcion_corta">Plato resistente, fácil de limpiar y con base antideslizante para evitar derrames.</div>
+        <div class="precio">$450.00</div>
+      </div>
+
+      <div class="producto-item">
+        <img src="imagenes/produc_3.png" alt="JABON LIQUIDO">
+        <div class="nombre">Jabón Líquido para Mascotas</div>
+        <div class="descripcion_corta">Fórmula suave y hipoalergénica para baño, mantiene el pelaje limpio y brillante.</div>
+        <div class="precio">$200.00</div>
+      </div>
+
+      <div class="producto-item">
+        <img src="imagenes/produc_4.png" alt="PECHERA">
+        <div class="nombre">Pechera Ajustable</div>
+        <div class="descripcion_corta">Pechera ergonómica y ajustable para paseos cómodos y seguros.</div>
+        <div class="precio">$500.00</div>
+      </div>
+
+      <div class="producto-item">
+        <img src="imagenes/produc_5.png" alt="PECHERA Y CEPILLO">
+        <div class="nombre">Kit Pechera + Cepillo</div>
+        <div class="descripcion_corta">Incluye pechera cómoda y cepillo para mantener el pelaje en óptimas condiciones.</div>
+        <div class="precio">$350.00</div>
+      </div>
+
+      <div class="producto-item">
+        <img src="imagenes/produc_6.png" alt="CAMA">
+        <div class="nombre">Cama Acolchada</div>
+        <div class="descripcion_corta">Cama lavable y acolchada para que tu mascota descanse con confort.</div>
+        <div class="precio">$600.00</div>
+      </div>
+
+      <div class="producto-item">
+        <img src="imagenes/produc_7.png" alt="PECHERA REFORSADA">
+        <div class="nombre">Pechera Reforzada</div>
+        <div class="descripcion_corta">Diseño reforzado pensado para perros fuertes y actividades al aire libre.</div>
+        <div class="precio">$1,200.00</div>
+      </div>
+
+      <div class="producto-item">
+        <img src="imagenes/produc_8.png" alt="CASA PARA TRASPORTAR">
+        <div class="nombre">Transportadora Segura</div>
+        <div class="descripcion_corta">Transportadora ventilada y resistente para viajes cortos y consultas.</div>
+        <div class="precio">$250.00</div>
+      </div>
+    </div>
+  </main>
+
+    <!-- sobre nosotros -->
+
+<section class="sobre-nosotros">
+  <div class="contenedor-sobre">
+    <img src="imagenes/sobrenosotros.jpg" alt="Sobre Nosotros" class="imagen-sobre">
+    <div class="texto-sobre">
+      <h2>Sobre Nosotros</h2>
+      <p>
+        En MUPE Veterinaria nos apasiona el cuidado de tus mascotas.  
+        Contamos con un equipo de profesionales dedicados a brindar  
+        atención médica, estética y bienestar para que tus compañeros  
+        peludos vivan felices y saludables.
+      </p>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="pie_pagina">
+    <p>© 2025 MUPE Veterinaria-Areli/Citlalli. Todos los derechos reservados.</p>
+    <div class="redes">
+      <a href="#">Facebook</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">TikTok</a>
+    </div>
+  </footer>
+</body>
+</html>
